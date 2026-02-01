@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the art gallery</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+            max-width: 800px;
+        }
+
+        /* Section styles */
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            width: 100%;
+            max-width: 900px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #ffd700;
+            text-align: center;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #ffeb3b;
+        }
+
+        
+        
+    .container {
+            display: block;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            text-align: center;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: fixed;
+            overflow: visible;
+        
+        }
+    
+        .onclick {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+        }
+        .onclick:hover {                                                                         
+            box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+            transform: translateY(-5px);
+        }
+.image {
+  display: flex; /* Or use inline-block for simpler cases */
+  align-items: center; /* Aligns image and text vertically */
+}
+
+img {
+  width: 400px; /* Adjust size as needed */
+  margin-right: 20px; /* Space between image and text */
+}
+    .contain{
+      display: flex;
+      align-items: center; /* vertically center content */
+    }
+    .text {
+      flex: 1; /* paragraph takes available space */
+      padding-right: 20px;
+    }
+    .pecock {
+      flex: 0; /* image stays fixed size */
+    }
+    .pecock img {
+      max-width: 400px; /* adjust size as needed */
+      height: auto;
+    }
+
+.gallery {
+            display: flex;
+            overflow-x: auto; /* Enables horizontal scrolling */
+            white-space: nowrap; /* Prevents wrapping */
+            padding: 10px;
+            gap: 10px; /* Space between images */
+            scroll-behavior: smooth;
+        }
+        .gallery img {
+            width: 400px; 
+            height: auto;
+            flex-shrink: 0; 
+        }
+
+
+    </style>
+    </head>
+     <body>
+    <h1>WELCOME TO  THE ZONE OF  AS SANJOY CHAKRABORTY</h1>
+    <p>i will help you to draft  any potrait in some simple and easy steps ... join me hurry up</p>
+    <section id="intro section">
+        <h2>MY ART WORK</h2>
+        <div class="image"> <img  src="c1.jpeg"alt="my drawing">
+    <p>"Today, we gather to celebrate the creative journey of sanjoy chakraborty, whose work transcends boundaries and speaks directly to the human spirit. With a unique vision that blends technical mastery and emotional depth, he has consistently transformed ordinary moments into extraordinary expressions of art. Each piece is not just a reflection of imagination, but a dialogue between the artist and the world—inviting us to see, feel, and connect in new ways. As we welcome  into this space, we honor not only the artistry but also the courage, passion, and dedication that define his craft."</p></div>
+        
+    
+        
+
+    </section>
+
+    <section id="intro">
+        <h2>WHY TO JOIN WITH ME</h2>
+          <div class="contain">
+    <div class="text">
+      <p>
+        "Are you ready to unlock your creative potential and take your artistry to the next level? In my mentorship-driven art course, I don’t just teach techniques—I guide you to discover your own unique voice. Through step-by-step lessons, personalized feedback, and insider insights into the creative process, you’ll learn how to transform ideas into powerful visual stories. Whether you’re a beginner eager to explore or an experienced artist seeking refinement, this course is designed to nurture your growth, challenge your imagination, and help you build confidence in your craft. Join me, and let’s turn your passion for art into a journey of mastery and self-expression."
+      </p>
+    </div>
+    <div class="pecock">
+      <img src="c3.jpeg" alt="Sample Image">
+    </div>
+  </div>
+        
+    </section>
+
+    
+
+    <section id="video section">
+        <h2>MY WORDS</h2>
+       
+        <video src="v1.mp4"  widght="100%" max width="800px" controls></video>
+
+
+        <div class="container">
+        <button  onclick="document.location='https://wa.me/+918617286304'"class="onclick" >CONTACT ME HERE</button>
+        </div>
+
+        
+      
+    </section>
+
+   
+  
+
+    <section id="images">
+        <h2>MY MORE ARTWORK</h2>
+        
+        <div class="gallery" id="gallery"> <img src="c5.jpeg" alt="Photo 1">
+        <img src="c6.jpeg" alt="Photo 2">
+        <img src="c7.jpeg" alt="Photo 3">
+        <img src="c2.jpeg" alt="photo  4"
+        <img src="c9.jpeg" alt="photo 5">
+        <img src="c10.jpeg" alt="photo 6">
+
+    </div>
+    </section>
+
+     <script>
+        const gallery = document.getElementById('gallery');
+        let scrollAmount = 0;
+        const scrollSpeed = 2; // Pixels per frame (adjust for speed)
+        const scrollInterval = 50; // Milliseconds between scrolls (adjust for smoothness)
+        let autoScroll = setInterval(() => {
+            scrollAmount += scrollSpeed;
+            gallery.scrollLeft = scrollAmount;
+            
+            // Loop back to start when reaching the end
+            if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+                scrollAmount = 0;
+            }
+        }, scrollInterval);
+
+        // Pause on hover
+        gallery.addEventListener('mouseenter', () => clearInterval(autoScroll));
+        gallery.addEventListener('mouseleave', () => {
+            autoScroll = setInterval(() => {
+                scrollAmount += scrollSpeed;
+                gallery.scrollLeft = scrollAmount;
+                if (scrollAmount >= gallery.scrollWidth - gallery.clientWidth) {
+                    scrollAmount = 0;
+                }
+            }, scrollInterval);
+        });
+    </script>
+
